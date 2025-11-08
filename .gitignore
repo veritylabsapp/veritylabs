@@ -1,0 +1,14 @@
+# Documentation files (local only)
+*.md
+REBRANDING_*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
