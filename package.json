@@ -1,0 +1,18 @@
+{
+  "name": "veritylabs",
+  "version": "1.0.0",
+  "description": "Verity Labs - Custom AI Agent Development Services",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "AI",
+    "Machine Learning",
+    "Agentic AI",
+    "Custom AI Development"
+  ],
+  "author": "Verity Labs",
+  "license": "MIT"
+}
