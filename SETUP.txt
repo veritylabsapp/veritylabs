@@ -1,0 +1,170 @@
+# Verity Labs - Next.js Setup Guide
+
+## 🚀 Modern Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui + Radix UI
+- **Icons:** Lucide React
+- **Animations:** Framer Motion
+- **Deployment:** Vercel
+
+## 📦 Installation Steps
+
+### 1. Install Node.js
+Download and install Node.js from: https://nodejs.org/
+(Recommended: LTS version 20.x or higher)
+
+### 2. Install Dependencies
+Open terminal in project folder and run:
+```bash
+npm install
+```
+
+This will install all dependencies from package.json including:
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- Framer Motion
+- Lucide Icons
+
+### 3. Run Development Server
+```bash
+npm run dev
+```
+
+Your site will be available at: http://localhost:3000
+
+### 4. Build for Production
+```bash
+npm run build
+```
+
+### 5. Deploy to Vercel
+
+#### Option A: Via Vercel Dashboard
+1. Go to https://vercel.com/new
+2. Import your GitHub repository: veritylabsapp/veritylabs
+3. Vercel will auto-detect Next.js settings
+4. Click "Deploy"
+
+#### Option B: Via Vercel CLI
+```bash
+npm install -g vercel
+vercel login
+vercel --prod
+```
+
+## 📁 Project Structure
+
+```
+veritylabs/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx          # Root layout with metadata
+│   │   ├── page.tsx             # Home page
+│   │   └── globals.css          # Global styles
+│   └── components/
+│       ├── Header.tsx           # Navigation header
+│       ├── Hero.tsx             # Hero section
+│       ├── Services.tsx         # Services showcase
+│       ├── WhyUs.tsx            # Why choose us
+│       ├── TechStack.tsx        # Technology stack
+│       ├── Contact.tsx          # Contact section
+│       └── Footer.tsx           # Footer
+├── public/                      # Static assets
+├── package.json                 # Dependencies
+├── tsconfig.json                # TypeScript config
+├── tailwind.config.ts           # Tailwind config
+├── next.config.js               # Next.js config
+└── postcss.config.js            # PostCSS config
+
+```
+
+## ✨ Features Implemented
+
+✅ Fully responsive design (mobile-first)
+✅ Modern UI with Tailwind CSS
+✅ TypeScript for type safety
+✅ SEO optimized with Next.js metadata
+✅ Fast page loads with Next.js optimization
+✅ Smooth animations with Framer Motion
+✅ Accessible components with Radix UI
+✅ Dark mode ready (Tailwind CSS)
+✅ Production-ready build system
+
+## 🎨 Customization
+
+### Colors
+Edit `tailwind.config.ts` to change the primary color:
+```typescript
+primary: {
+  DEFAULT: "#F18232",  // Verity Labs orange
+  foreground: "#ffffff",
+},
+```
+
+### Content
+Edit components in `src/components/` to update:
+- Services offered
+- Company information
+- Contact details
+- Tech stack
+
+### Metadata (SEO)
+Edit `src/app/layout.tsx` to update:
+- Page title
+- Description
+- Keywords
+- Open Graph tags
+
+## 🔧 Troubleshooting
+
+### TypeScript Errors
+All TypeScript errors will resolve after running `npm install`
+
+### Port Already in Use
+If port 3000 is busy, Next.js will automatically use 3001
+
+### Build Errors
+Clear cache and rebuild:
+```bash
+rm -rf .next
+npm run build
+```
+
+## 📝 Next Steps
+
+1. ✅ Install Node.js
+2. ✅ Run `npm install`
+3. ✅ Run `npm run dev` to test locally
+4. ✅ Customize content in components
+5. ✅ Add your logo to `public/` folder
+6. ✅ Update contact information
+7. ✅ Deploy to Vercel
+
+## 🌐 Deployment URLs
+
+- **GitHub:** https://github.com/veritylabsapp/veritylabs
+- **Vercel:** Will be generated after deployment
+
+## 💡 Tips
+
+- Use `npm run lint` to check for code issues
+- Components are in `src/components/` for easy editing
+- All styling uses Tailwind CSS utility classes
+- Images go in `public/` folder
+- Environment variables go in `.env.local`
+
+## 📞 Support
+
+For Next.js help: https://nextjs.org/docs
+For Tailwind CSS: https://tailwindcss.com/docs
+For shadcn/ui: https://ui.shadcn.com/
+
+---
+
+**Verity Labs - Empowering Innovation Through Advanced AI Solutions**
